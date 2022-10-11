@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listfood">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="399dp"
+            android:background="@drawable/gradiant"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imvback"
+                    android:layout_width="61dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="209dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="280px"
+                    android:layout_weight="1"
+                    android:text="PROFILE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="63dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center|right"
+                    app:srcCompat="@drawable/ic_action_name" />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="137dp"
+                android:layout_height="111dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20px"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:fontFamily="@font/alata"
+                android:text="VĂN HUẤN"
+                android:textColor="#FFFFFF"
+                android:textSize="55px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alata"
+                android:text="UI/UX design"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border1"
+                android:orientation="vertical"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="BALANCE"
+                    android:layout_marginTop="30px"
+                    />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alatsi"
+                    android:text="$4,196.09"
+                    android:textColor="#1c3b71"
+                    android:textSize="100px" />
+
+                <Button
+                    android:id="@+id/bttrasfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#245CBC"
+                    android:text="TRANSFER" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp" />
+    </LinearLayout>
+
+</RelativeLayout>
